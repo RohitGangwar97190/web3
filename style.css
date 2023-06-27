@@ -1,0 +1,55 @@
+.container{
+    height: 400px;
+    border:2px solid red;
+      display:flex; 
+    /* isse saare box direction change kr linge  horizontal to vertical*/
+
+flex-direction: row-reverse; 
+/* isse saare box  opposite direction see ayenge */
+ flex-wrap:wrap;
+/*isse yeh hota h ki jb size chotaa hogaa then apne aap ko adjust krlinge */
+gap:10px;
+/* isse saare box ke beech me gap aa jayega */
+row-gap: 10px;
+/* isse se sirf two rows ke beech me gap aayega */
+flex-flow: wrap row;
+/* yeh ek short hand proprrty h jisse wrap aur row wised aate h  aa jaate
+ */
+  justify-content: space-around;
+  /* isse saare khalii jagah bhrr jaati h jisse beech me double space aa jati h */
+justify-content: flex-start;
+/* isse se saare box starting se bhare jayenge */
+justify-content: flex-end;
+/* isse saare box end se aayenge  */
+justify-content: center;
+/* isse saare box center prr aayenge */
+align-items:stretch ;
+/* yeh by default values hoti h jisse saare box parents container ke hisaab se height le lete h */
+align-items: center;
+/* isme boxes neeeche se aayenge */
+align-items: flex-start;
+/* isme boxes uprr se aayenge */
+/* align-items:=ko hmm tbb used krte h jbb hme cross-axis(vertical) ke along align krnaa hota h ; */
+
+}
+.box{
+    border:2px solid green;
+     margin:10px 0px;
+     width:140px;
+} 
+#box-1{
+    order:1;
+    /* isee box bilkul last me pauch jayega */
+    flex-grow: 1;
+    /* isse bachi hui saari jagah yeh le legaa */
+    /* by default value zero hoti h */
+    flex-shrink: 2;
+    /* isse yeh box jldi chotaa hogaa */
+    /* bydefault value 1 hoti h  */
+    flex-basis: 200px;
+    /* isse yeh hota h ki yeh pehle se hii jyaada width le krr aayega */
+/* flex:flex-grow flex-shrink flex-basics */
+/* iskaa yeh combination hotaa h  */
+align-self: start;
+/* isse box stating me aa jayega
+} */
